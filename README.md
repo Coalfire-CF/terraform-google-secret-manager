@@ -1,6 +1,33 @@
-# Secret Manager
+# Google Cloud Secret Manager Terraform Module
+
+## Description
 
 This Secret Manager module allows you to easily create any needed secrets in Secret Manager. This module loops through a list of variable names and creates a secret and randomly generated password for each item.
+
+FedRAMP Compliance: Moderate
+
+### Usage
+
+```
+module "ad-secrets" {
+  source = "github.com/Coalfire-CF/ACE-GCP-Secret-Manager"
+
+  project_id = data.terraform_remote_state.bootstrap.outputs.management_project_id
+  region     = var.region
+
+  secrets      = var.users
+  kms_key_name = data.terraform_remote_state.bootstrap.outputs.gsm_kms_key_id
+
+  length           = 15
+  special          = true
+  override_special = "_%@!"
+  min_lower        = 1
+  min_upper        = 1
+  min_numeric      = 1
+  min_special      = 1
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
