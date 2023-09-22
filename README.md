@@ -10,13 +10,13 @@ FedRAMP Compliance: Moderate
 
 ```
 module "ad-secrets" {
-  source = "github.com/Coalfire-CF/ACE-GCP-Secret-Manager"
+  source = "github.com/Coalfire-CF/terraform-gcp-secret-manager"
 
-  project_id = data.terraform_remote_state.bootstrap.outputs.management_project_id
-  region     = var.region
+  project_id = "your-project-id"
+  region     = "us-central1-a"
 
   secrets      = var.users
-  kms_key_name = data.terraform_remote_state.bootstrap.outputs.gsm_kms_key_id
+  kms_key_name = "kms-key-name"
 
   length           = 15
   special          = true
