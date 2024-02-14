@@ -24,7 +24,9 @@ module "ad-secrets" {
     {
       id = "db2-password",
     }
-  ]  kms_key_name = "kms-key-name"
+  ]
+
+  kms_key_name = "kms-key-name"
 
   length           = 15
   special          = true
