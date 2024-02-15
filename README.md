@@ -82,6 +82,7 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_names"></a> [names](#output\_names) | List of secret names |
 | <a name="output_secrets"></a> [secrets](#output\_secrets) | List of secrets |
 | <a name="output_secrets_versions"></a> [secrets\_versions](#output\_secrets\_versions) | List of secret versions |
 <!-- END_TF_DOCS -->
