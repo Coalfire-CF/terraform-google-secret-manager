@@ -1,15 +1,21 @@
-output "secret_names" {
-  value = concat(
-    values({ for k, v in google_secret_manager_secret.secrets : k => v.name }),
-  )
+output "secrets" {
+  value = { for k, v in google_secret_manager_secret.secrets : k =>
+    {
+      id   = v.id
+      name = v.name
+    }
+  }
 
-  description = "The name list of Secrets"
+  description = "List of secrets"
 }
 
-output "secret_versions" {
-  value = concat(
-    values({ for k, v in google_secret_manager_secret_version.secret_versions : k => v.name }),
-  )
+output "secrets_versions" {
+  value = { for k, v in google_secret_manager_secret_version.secret_versions : k =>
+    {
+      id   = v.id
+      name = v.name
+    }
+  }
 
-  description = "The name list of Secret Versions"
+  description = "List of secret versions"
 }
