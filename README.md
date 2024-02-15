@@ -17,7 +17,15 @@ module "ad-secrets" {
   project_id = "your-project-id"
   region     = "us-central1-a"
 
-  secrets      = var.users
+  secrets = [
+    {
+      id = "db1-password",
+    },
+    {
+      id = "db2-password",
+    }
+  ]
+
   kms_key_name = "kms-key-name"
 
   length           = 15
@@ -74,6 +82,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_secret_names"></a> [secret\_names](#output\_secret\_names) | The name list of Secrets |
-| <a name="output_secret_versions"></a> [secret\_versions](#output\_secret\_versions) | The name list of Secret Versions |
+| <a name="output_secrets"></a> [secrets](#output\_secrets) | List of secrets |
+| <a name="output_secrets_versions"></a> [secrets\_versions](#output\_secrets\_versions) | List of secret versions |
 <!-- END_TF_DOCS -->
