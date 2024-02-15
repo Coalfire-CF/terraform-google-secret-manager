@@ -17,7 +17,15 @@ module "ad-secrets" {
   project_id = "your-project-id"
   region     = "us-central1-a"
 
-  secrets      = var.users
+  secrets = [
+    {
+      id = "db1-password",
+    },
+    {
+      id = "db2-password",
+    }
+  ]
+
   kms_key_name = "kms-key-name"
 
   length           = 15
