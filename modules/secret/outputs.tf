@@ -1,3 +1,8 @@
+output "name" {
+  description = "Name of secret."
+  value       = google_secret_manager_secret.secret.secret_id
+}
+
 output "secret_id" {
   description = "Secret ID."
   value       = google_secret_manager_secret.secret.id
