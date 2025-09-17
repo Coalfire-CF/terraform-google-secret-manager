@@ -75,7 +75,7 @@ No modules.
 | <a name="input_override_special"></a> [override\_special](#input\_override\_special) | Provide your own list of special characters | `string` | `"_%@!"` | no |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The project ID to manage the Secret Manager resources | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | The GCP region to create resources in. | `string` | n/a | yes |
-| <a name="input_secrets"></a> [secrets](#input\_secrets) | The list of the secrets | <pre>list(object({<br>    id           = string<br>    data         = optional(string)<br>    skip_version = optional(bool, false)<br>  }))</pre> | `[]` | no |
+| <a name="input_secrets"></a> [secrets](#input\_secrets) | The list of the secrets | <pre>list(object({<br/>    id           = string<br/>    data         = optional(string)<br/>    skip_version = optional(bool, false)<br/>  }))</pre> | `[]` | no |
 | <a name="input_special"></a> [special](#input\_special) | Include special characters in random password string | `bool` | `true` | no |
 
 ## Outputs
