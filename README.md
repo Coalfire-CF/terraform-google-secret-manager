@@ -86,3 +86,24 @@ No modules.
 | <a name="output_secrets"></a> [secrets](#output\_secrets) | List of secrets |
 | <a name="output_secrets_versions"></a> [secrets\_versions](#output\_secrets\_versions) | List of secret versions |
 <!-- END_TF_DOCS -->
+
+## Tree
+
+```text
+.
+|-- CHANGELOG.md
+|-- CONTRIBUTING.md
+|-- LICENSE
+|-- README.md
+|-- coalfire_logo.png
+|-- main.tf
+|-- modules
+|   |-- secret
+|       |-- README.md
+|       |-- main.tf
+|       |-- outputs.tf
+|       |-- variables.tf
+|-- outputs.tf
+|-- release-please-config.json
+|-- variables.tf
+```
