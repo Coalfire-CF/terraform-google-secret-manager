@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.1.1](https://github.com/Coalfire-CF/terraform-google-secret-manager/compare/v1.1.0...v1.1.1) (2026-08-20)
+
+
+### Bug Fixes
+
+* **release:** pass secrets to org-release (App token for release-please) ([#39](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/39)) ([af35e3d](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/af35e3d02c7be0c3f62580be7fc59d5e8ad4bf83))
+
+
+### Miscellaneous
+
+* adopt Actions v0.12.1 (bypass auto-merge + event-driven re-merge) ([618a02a](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/618a02a11080585b6a20290dd66f246b9cf66235))
+* **ci:** adopt Coalfire-CF/Actions v0.11.3 ([#37](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/37)) ([f120b77](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/f120b773d0f4a8e136d1d0074ace5363af558dd3))
+* **deps:** bump the org-actions group across 1 directory with 9 updates ([#51](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/51)) ([98ebafe](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/98ebafe3deb129bdc734365fe49ca6e885edc063))
+* **deps:** bump the org-actions group with 10 updates ([#40](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/40)) ([c018e2b](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/c018e2b91da0de811b22a954a8e425e078ea863d))
+* **deps:** bump the org-actions group with 10 updates ([#41](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/41)) ([668c818](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/668c8180cf97018eb4016cd0e2e6a4c4a65b23ce))
+* **deps:** bump the org-actions group with 10 updates ([#42](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/42)) ([40b0448](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/40b04485a538df5e1c00f92139b8ab865d991620))
+* **deps:** bump the org-actions group with 10 updates ([#43](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/43)) ([b688718](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/b6887183cfb35b075f9942ae35e0d925be3e19a4))
+* **deps:** bump the org-actions group with 9 updates ([#46](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/46)) ([78d94a9](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/78d94a96728605fc1f68cd0c56eeb619a3c64cef))
+* **docs:** generate README from _header.md and _footer.md ([#49](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/49)) ([cbcf63d](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/cbcf63d66fca3695a1aa989e7d9dcbf0d033a9d5))
+* refresh PR template ([#48](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/48)) ([6bf1667](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/6bf1667d8c2f48cb5ef6b28da754d657498c4555))
+* retire org-tree-readme ([#44](https://github.com/Coalfire-CF/terraform-google-secret-manager/issues/44)) ([2bb1d04](https://github.com/Coalfire-CF/terraform-google-secret-manager/commit/2bb1d04b2ea654ebf10fd1b832fb9ae5349cffcd))
+
 ## [1.1.0](https://github.com/Coalfire-CF/terraform-google-secret-manager/compare/v1.0.6...v1.1.0) (2026-07-05)
 
 
