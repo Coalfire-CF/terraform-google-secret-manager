@@ -4,7 +4,9 @@
 
 ## Description
 
-This Secret Manager module allows you to easily create any needed secrets in Secret Manager. This module loops through a list of variable names and creates a secret and randomly generated password for each item. Coalfire has tested this module with Terraform version 1.5.0 and the Hashicorp Google provider versions 4.70 - 5.0.
+This Secret Manager module allows you to easily create any needed secrets in Secret Manager. This module loops through a
+list of variable names and creates a secret and randomly generated password for each item. Coalfire has tested this
+module with Terraform version 1.5.0 and the Hashicorp Google provider versions 4.70 - 5.0.
 
 FedRAMP Compliance: Moderate
 
